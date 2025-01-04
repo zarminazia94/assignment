@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Young+Serif&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-image:url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat no-repeat;
+    font-family:League Spartan;
+    font-size: 17px;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 0 10%;
+    /* position: relative; */
+}
+.primary-grid{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    align-items: center;
+    justify-content: center;
+}
+.primary-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: repeat(2, 20px);
+    place-items: center;
+    padding-right: 8em;
+}
+
+.top-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.primary-content h1{
+    font-weight:bold;
+    font-size: 52px;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 1rem;
+}
+.primary-content p{
+    color: hsl(303, 10%, 53%);
+    font-size: 17px;
+    line-height: 22px;
+    /* padding-top: ; */
+}
+.ratings{
+   width: 50%;
+   max-width: fit-content;
+   /* margin: auto; */
+}
+.rating{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    padding: 18px 40px 18px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.rating:nth-child(1){
+    transform: translateX(-50px);
+}
+.rating:nth-child(2){
+    transform: translateX(-20px);
+    /* margin-left: 20px; */
+}
+.rating:nth-child(3){
+    left: 4rem;
+}
+.rating p{
+    margin-left: 15px;
+    color: hsl(300, 43%, 22%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bottom-grid{
+    display: flex;
+    grid-gap: 20px;
+    /* margin-top: 10%; */
+}
+.user-reviews{
+    background-color:hsl(300, 43%, 22%) ;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.user-reviews:nth-child(1){
+    margin-bottom: 2rem;
+}
+.user-reviews:nth-child(2){
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.user-reviews:nth-child(3){
+    margin-top: 2rem;
+}
+.user-reviews p{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+}
+.user-details{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.user-details img{
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.info{
+    font-weight: 500;
+}
+.Verified{
+    font-size: 0.7rem;
+    color:hsl(333, 80%, 67%) ;
+}
+
